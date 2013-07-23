@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "fileSystem Test",
+    "version": "0.0.0",
+    "description": "これはテストですよ",
+    
+    "app": {
+        "background": {
+          "scripts": ["background.js"]
+        }
+    },
+
+    "permissions": [
+        "storage",
+        {
+            "fileSystem":[
+                "write",
+                "retainEntries"
+            ]
+        }
+    ]
+}
